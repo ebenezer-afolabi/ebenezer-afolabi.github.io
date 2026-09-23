@@ -105,8 +105,11 @@
     background: var(--surface); border: 1px solid var(--line); border-radius: 20px;
     padding: 20px; margin-bottom: 24px;
   }
-  .project-media { border-radius: 12px; overflow: hidden; background: var(--surface-2); margin-bottom: 20px; }
-  .project-media img { width: 100%; height: auto; }
+  .project-media {
+    border-radius: 12px; overflow: hidden; background: var(--surface-2); margin-bottom: 20px;
+    display: flex; align-items: center; justify-content: center; padding: 28px;
+  }
+  .project-media img { width: auto; max-width: 100%; max-height: 380px; height: auto; border-radius: 8px; }
   .project-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
   .project-row h3 { font-size: 19px; font-weight: 700; margin: 0 0 4px; }
   .project-row .tag { color: var(--muted); font-size: 13px; margin: 0; }
@@ -193,6 +196,8 @@
     section { padding: 64px 0; }
     .who-grid { grid-template-columns: 1fr; gap: 32px; }
     .who-photo { max-width: 260px; margin: 0 auto; }
+    .project-media { padding: 16px; }
+    .project-media img { max-height: 300px; }
     .stack-grid { grid-template-columns: repeat(2, 1fr); }
     .footer-cols { grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .footer-cols a { font-size: 13px; }
@@ -352,7 +357,6 @@
         <a class="btn-primary" href="mailto:nezardesign01@gmail.com?subject=Project%20inquiry%20from%20your%20portfolio">Email me</a>
         <a class="btn-secondary" href="https://dribbble.com/nezer_designs" target="_blank" rel="noopener">View Dribbble</a>
       </div>
-      <p style="margin-top:22px; font-size:14px; color:var(--muted);">Or reach me directly at <a href="mailto:nezardesign01@gmail.com" style="color:var(--text); font-weight:600; border-bottom:1px solid var(--line);">nezardesign01@gmail.com</a></p>
     </section>
 
     <section class="signature">
@@ -380,7 +384,7 @@
           <h4>QUICK LINKS</h4>
           <a href="#work">Work</a>
           <a href="#contact">Contact</a>
-          <a href="mailto:nezardesign01@gmail.com?subject=Project%20inquiry%20from%20your%20portfolio">nezardesign01@gmail.com</a>
+          <a href="mailto:nezardesign01@gmail.com?subject=Project%20inquiry%20from%20your%20portfolio">Email</a>
         </div>
         <div>
           <h4>PORTFOLIO</h4>
